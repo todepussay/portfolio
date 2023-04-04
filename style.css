@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     --blue: #56dcfc;
+    --blue-deep: #015eff;
     color: #fff;
 }
 
@@ -104,13 +105,53 @@ header .menu ul li a {
 }
 
 #about {
-    height: 70vh;
+    height: 90vh;
+    background: #ededed;
 }
 
 #about .content {
     width: 90%;
     height: 100%;
     margin: auto;
+    padding-top: 10rem;
+}
+
+#about .content h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: black;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+#about .content p,
+#about .content span {
+    margin-top: 2em;
+    color: black;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#about .content .white-blue {
+    color: var(--blue-deep);
+}
+
+#about .content .left {
+    width: 50%;
+    float: left;
+}
+
+#about .content .right {
+    width: 50%;
+    float: right;
+    margin-top: -2em;
+}
+
+#about .content .right img {
+    display: flex;
+    margin: auto;
+    border-radius: 100%;
+    width: 400px;
 }
 
 @media screen and (max-width: 1200px) {

@@ -15,3 +15,15 @@ if (m < 0 || (m === 0 && today.getDate() < dateNaissance.getDate())) {
 }
 
 document.getElementById('age').innerHTML = age;
+
+// Scroll to anchor
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
