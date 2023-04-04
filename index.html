@@ -32,7 +32,7 @@
             <div class="content">
                 <p>Bonjour, je m'appelle</p><br>
                 <h2>Tom Depussay</h2>
-                <p>J'ai 19 ans et je suis un développeur junior au lycée Saint Paul Bourdon Blanc à Orléans</p>
+                <p>J'ai <span id="age">18</span> ans et je suis un développeur junior au lycée Saint Paul Bourdon Blanc à Orléans</p>
 
                 <div class="btn-box">
                     <a href="#about" class="btn">A propos de moi</a>
@@ -44,13 +44,23 @@
     <div class="about">
         <div class="container" id="about">
             <div class="content">
-                <h2>A propos de moi</h2>
-                <p>Je suis un développeur junior, j'ai 19 ans et je suis en terminale au lycée Saint Paul Bourdon Blanc à Orléans. Je suis passionné par le développement web et j'aimerais devenir développeur full stack.</p>
+                <div class="left">
+                    <h2>A propos de moi</h2>
+                    <p>
+                        Je m'appelle Tom Depussay, j'ai <span id="age">18</span> ans, je suis un jeune développeur en apprentissage au lycée
+                        Saint Paul Bourdon Blanc. Je suis passionné par le développement web. J'ai commencé à apprendre le développement web
+                        en 2019, j'ai commencé par apprendre le HTML et le CSS, puis j'ai appris le JavaScript et le PHP. Je suis en 1ème année
+                        de BTS SIO (Services Informatiques aux Organisations).
+                    </p>
+                </div>
+                <div class="right">
+
+                </div>
             </div>
         </div>
     </div>
 
-
+    <script src="app.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>

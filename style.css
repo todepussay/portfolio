@@ -107,8 +107,10 @@ header .menu ul li a {
     height: 70vh;
 }
 
-#about .content h2, #about .content p {
-    color: black;
+#about .content {
+    width: 90%;
+    height: 100%;
+    margin: auto;
 }
 
 @media screen and (max-width: 1200px) {
