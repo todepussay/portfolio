@@ -311,6 +311,10 @@ header .menu ul li a {
     width: 300px;
 }
 
+.card .card-content .btn-little a {
+    font-size: 1.5rem;
+}
+
 .card:nth-child(odd) .card-video {
     order: 2;
 }
@@ -572,6 +576,10 @@ footer .content p, footer .content span {
         color: white;
         display: block;
         margin-top: 10px;
+    }
+
+    .card .card-content a {
+        display: none;
     }
 
     #skills .content h2 {
