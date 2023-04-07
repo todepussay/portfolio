@@ -184,6 +184,7 @@ header .menu ul li a {
 
 #about .content .white-blue {
     color: var(--blue-deep);
+    text-decoration: none;
 }
 
 #about .content .left {
