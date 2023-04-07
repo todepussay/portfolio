@@ -48,7 +48,7 @@ header .menu-div {
     background: var(--blue-deep2);
     width: 50%;
     height: 100vh;
-    z-index: 1;
+    z-index: 100;
     display: none;
     box-shadow: rgba(0, 0, 0, 0.7) -10px 0px 30px;
 }
@@ -627,10 +627,15 @@ footer .content p, footer .content span {
         width: 90%;
     }
 
+    #about {
+        padding-top: 5em;
+        height: auto;
+    }
+
     #about .content .right img {
         margin-top: 5%;
         width: 200px;
-    }   
+    }
 
     .card .card-content p {
         font-size: 1rem;
@@ -646,5 +651,50 @@ footer .content p, footer .content span {
         margin-top: 0;
         width: 200px;
         font-size: 1rem;
+    }
+
+    .link span {
+        font-size: 1rem;
+    }
+
+    .list a span {
+        font-size: 1rem;
+    }
+
+    #menu-div {
+        width: 80vw;
+    }
+
+    footer .content {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer .content p, footer .content span {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .card .card-content p {
+        font-size: 0.6rem;
+        width: 80%;
+    }
+
+    .card .card-content h3 {
+        font-size: 1rem;
+    }
+
+    .card .card-content a {
+        width: 150px;
+        font-size: 0.6rem;
+    }
+
+    #menu-div {
+        width: 90vw;
     }
 }
