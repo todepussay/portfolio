@@ -27,3 +27,21 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+document.getElementById('menu-btn').onclick = function() {
+    document.getElementById('menu-div').style.opacity = 0;
+    document.getElementById('menu-div').style.transform = 'translateX(-100%)';
+    document.getElementById('menu-div').style.display = 'block';
+    setTimeout(function() {
+        document.getElementById('menu-div').style.opacity = 1;
+        document.getElementById('menu-div').style.transform = 'translateX(0)';
+    }, 100);
+}
+
+document.getElementById('close-btn').onclick = function() {
+    setTimeout(function() {
+        document.getElementById('menu-div').style.opacity = 0;
+        document.getElementById('menu-div').style.transform = 'translateX(-100%)';
+        document.getElementById('menu-div').style.display = 'none';
+    }, 100);
+}

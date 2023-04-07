@@ -23,9 +23,24 @@
                     <li><a href="#contact" class="btn">Me contacter</a></li>
                 </ul>
             </div>
-            <div class="menu-phone">
+            <div id="menu-btn">
                 <ion-icon name="menu-outline"></ion-icon>
             </div>
+
+            <div class="menu-div" id="menu-div">
+                <div id="close-btn">
+                    <ion-icon name="close-outline"></ion-icon>
+                </div>
+
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#about">A propos de moi</a></li>
+                    <li><a href="#projects">Mes projets</a></li>
+                    <li><a href="#skills">Mes compétences</a></li>
+                    <li><a href="#contact" class="btn">Me contacter</a></li>
+                </ul>
+            </div>
+
         </header>
 
         <div class="container" id="home">
@@ -59,7 +74,7 @@
         </div>
     </div>
 
-    <div id="spacing"></div>
+    <div class="spacing"></div>
 
     <div class="container" id="projects">
         <div class="content">
@@ -139,7 +154,7 @@
         </div>
     </div>
 
-    <div id="spacing-end"></div>
+    <div class="spacing-end"></div>
 
     <div class="container" id="skills">
         <div class="content">
@@ -201,7 +216,60 @@
     </div>
 
     
-    <div id="spacing-contact"></div>
+    <div class="spacing" id="spacing-contact"></div>
+
+    <div class="container" id="contact">
+        <div class="content">
+
+            <h2>Me contacter</h2>
+
+            <div class="list">
+                
+                <div class="link">
+                    <div class="box-img">
+                        <img src="img/gmail.png" alt="Gmail Logo">
+                    </div>
+                    <span>depussay.tom1@gmail.com</span>
+                </div>
+
+                <a href="https://www.linkedin.com/in/tom-depussay-a58382238/" target="_blank">
+                    <div class="box-img">
+                        <img src="img/linkedln.png" alt="LinkedIn Logo">
+                    </div>
+                    <span>LinkedIn</span>
+                </a>
+
+                <a href="https://github.com/tomdepussay" target="_blank">
+                    <div class="box-img">
+                        <img src="img/github.png" alt="GitHub Logo">
+                    </div>
+                    <span>GitHub</span>
+                </a>
+
+                <div class="link">
+                    <div class="box-img">
+                        <img src="img/discord.png" alt="Discord Logo">
+                    </div>
+                    <span>Discord</span>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="spacing-end" id="spacing-end-contact"></div>
+
+    <footer>
+        <div class="content">
+            <div class="left">
+                <p>© 2021 Tom Depussay</p>
+            </div>
+            <div class="right">
+                <p>Site réalisé par Tom Depussay</p>
+            </div>
+        </div>
+    </footer>
 
 
     <script src="app.js"></script>
