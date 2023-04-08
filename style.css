@@ -102,6 +102,13 @@ header .menu ul li a {
     padding: 10px 20px;
     margin-left: 10px;
     font-size: 1.2em;
+    opacity: 0.8;
+}
+
+header .menu ul li a:hover {
+    opacity: 1;
+    text-decoration: underline;
+    transition: opacity 0.3s ease-in-out, text-decoration 0.3s ease-in-out;
 }
 
 .btn {
@@ -112,6 +119,13 @@ header .menu ul li a {
     border: solid 2px var(--blue);
     color: var(--blue);
     border-radius: 20em;
+    opacity: 0.8;
+}
+
+.btn:hover {
+    opacity: 1;
+    text-decoration: underline;
+    transition: opacity 0.3s ease-in-out, text-decoration 0.3s ease-in-out;
 }
 
 .container {
@@ -274,6 +288,12 @@ header .menu ul li a {
     height: 100%;
     border-radius: 10px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+.card .card-video video:hover {
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+    transition: box-shadow 0.5s ease-in-out;
+
 }
 
 .card .card-content {
