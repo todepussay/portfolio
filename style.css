@@ -275,6 +275,7 @@ header .menu ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 7%;
 }
 
 .card .card-video {
@@ -551,6 +552,12 @@ footer .content p, footer .content span {
     font-size: 1.5rem;
 }
 
+@media screen and (max-width: 1440px){
+    .card {
+        margin-top: 0;
+    }
+}
+
 @media screen and (max-width: 1200px) {
     header .menu ul li a {
         font-size: 1em;
@@ -585,7 +592,7 @@ footer .content p, footer .content span {
     #about .content .right img {
         width: 300px;
         margin-top: 5%;
-    }   
+    }
 
     .card .card-content p {
         font-size: 1.2rem;
