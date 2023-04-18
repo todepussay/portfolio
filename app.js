@@ -1,3 +1,5 @@
+// Change age in real time
+
 var today = new Date();
 var now = today.toLocaleDateString();
 
@@ -16,6 +18,19 @@ if (m < 0 || (m === 0 && today.getDate() < dateNaissance.getDate())) {
 
 document.getElementById('age').innerHTML = age;
 
+// Get % of progress bar
+
+var progress_bar = document.querySelectorAll(".progress-bar");
+
+var array_progress = [];
+
+for (var i = 0; i < progress_bar.length; i++) {
+    var progression = progress_bar[i].style.width;
+    progress_bar[i].style.width = progression;
+    array_progress.push(progression);
+    progress_bar[i].style.width = "0%";
+}
+
 // Scroll to anchor
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -29,19 +44,47 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 document.getElementById('menu-btn').onclick = function() {
-    document.getElementById('menu-div').style.opacity = 0;
-    document.getElementById('menu-div').style.transform = 'translateX(-100%)';
     document.getElementById('menu-div').style.display = 'block';
-    setTimeout(function() {
-        document.getElementById('menu-div').style.opacity = 1;
-        document.getElementById('menu-div').style.transform = 'translateX(0)';
-    }, 100);
+    document.getElementById('menu-div').style.animation = "open-menu 0.5s forwards";
 }
 
 document.getElementById('close-btn').onclick = function() {
+    document.getElementById('menu-div').style.animation = "close-menu 0.5s forwards";
     setTimeout(function() {
-        document.getElementById('menu-div').style.opacity = 0;
-        document.getElementById('menu-div').style.transform = 'translateX(-100%)';
         document.getElementById('menu-div').style.display = 'none';
-    }, 100);
+    }, 500);
 }
+
+window.addEventListener("scroll", function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+
+    var reveals_skills_img = document.querySelectorAll(".reveal-skills-img");
+    var reveals_skills_txt = document.querySelectorAll(".reveal-skills-txt");
+    var reveals_skills_progress = document.querySelectorAll(".reveal-skills-progress");
+  
+    for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = 300;
+  
+        if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+        }
+    }
+
+    for (var i = 0; i < reveals_skills_img.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals_skills_img[i].getBoundingClientRect().top;
+        var elementVisible = 150;
+  
+        if (elementTop < windowHeight - elementVisible) {
+            reveals_skills_img[i].classList.add("active-skills-img");
+            reveals_skills_txt[i].classList.add("active-skills-txt");
+
+            reveals_skills_progress[i].style.transition = "width 1s";
+            reveals_skills_progress[i].style.width = array_progress[i];
+        }
+    }
+
+    
+});

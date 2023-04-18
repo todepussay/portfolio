@@ -10,14 +10,14 @@
 </head>
 <body>
 
-    <div class="main">
+    <div class="main" id="top">
         <header>
             <div class="name">
                 <h1>Tom Depussay</h1>
             </div>
             <div class="menu">
                 <ul>
-                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#top">Accueil</a></li>
                     <li><a href="#about">A propos de moi</a></li>
                     <li><a href="#projects">Mes projets</a></li>
                     <li><a href="#skills">Mes compétences</a></li>
@@ -34,7 +34,7 @@
                 </div>
 
                 <ul>
-                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#top">Accueil</a></li>
                     <li><a href="#about">A propos de moi</a></li>
                     <li><a href="#projects">Mes projets</a></li>
                     <li><a href="#skills">Mes compétences</a></li>
@@ -45,7 +45,7 @@
         </header>
 
         <div class="container" id="home">
-            <div class="content">
+            <div class="content reveal active">
                 <p>Bonjour, je m'appelle</p><br>
                 <h2>Tom Depussay</h2>
                 <p>J'ai <span id="age">19</span> ans et je suis un développeur junior au lycée Saint Paul Bourdon Blanc à Orléans</p>
@@ -60,7 +60,7 @@
     
     <div class="container" id="about">
         <div class="content">
-            <div class="left">
+            <div class="left reveal">
                 <h2>A propos de moi</h2>
                 <p>
                     Je m'appelle <span class="white-blue">Tom Depussay</span>, j'ai <span id="age">19</span> ans,
@@ -69,7 +69,7 @@
                     au <a href="https://www.stpaulbb.org" target="_blank" class="white-blue">lycée Saint Paul Bourdon Blanc</a> à Orléans. 
                 </p>
             </div>
-            <div class="right">
+            <div class="right reveal">
                 <img src="img/tom.jpg" alt="Tom Depussay">
             </div>
         </div>
@@ -82,12 +82,12 @@
             <h2>Mes projets</h2>
 
             <div class="card">
-                <div class="card-video">
+                <div class="card-video  reveal">
                     <a href="../typing/index.html" target="_blank">
                         <video loop muted autoplay src="video/typing.mp4"></video>
                     </a>
                 </div>
-                <div class="card-content">
+                <div class="card-content  reveal">
                     <h3>Test de Dactylographie</h3>
                     <p>
                         Un site permettant de réaliser un test de dactylographie avec des mots pris 
@@ -104,12 +104,12 @@
             </div>
 
             <div class="card">
-                <div class="card-video">
+                <div class="card-video reveal">
                     <a href="../converters/index.html" target="_blank">
                         <video loop muted autoplay src="video/converters.mp4"></video>
                     </a>
                 </div>
-                <div class="card-content">
+                <div class="card-content reveal">
                     <h3>Conversion de base</h3>
                     <p>
                         Un site permettant de convertir un nombre d'un base à une autre (binaire, octal, décimal, hexadécimal).
@@ -124,12 +124,12 @@
             </div>
 
             <div class="card">
-                <div class="card-video">
+                <div class="card-video reveal">
                     <a target="_blank" href="https://github.com/tomdepussay/demineur">
                         <video loop muted autoplay src="video/demineur.mp4"></video>
                     </a>
                 </div>
-                <div class="card-content">
+                <div class="card-content reveal">
                     <h3>Démineur</h3>
                     <p>
                         Un petit projet permettant de jouer au démineur sur un terminal.
@@ -143,12 +143,12 @@
             </div>
 
             <div class="card">
-                <div class="card-video">
+                <div class="card-video reveal">
                     <a target="_blank" href="https://github.com/tomdepussay/portfolio">
                         <video loop muted autoplay src="video/portfolio.mp4"></video>
                     </a>
                 </div>
-                <div class="card-content">
+                <div class="card-content reveal">
                     <h3>Portfolio</h3>
                     <p>
                         Mon Portfolio avec la liste de mes projets et mes compétences.
@@ -175,85 +175,85 @@
             <div class="list-skills">
 
                 <a href="http://en.wikipedia.org/wiki/HTML" target="_blank">
-                    <div class="box-img">
+                    <div class="box-img reveal-skills-img">
                         <img src="img/html.png" alt="HTML logo">
                     </div>
                     <div class="box-progress">
-                        <span style="color: white;">HTML</span>
+                        <span class="reveal-skills-txt" style="color: white;">HTML</span>
                         <div class="progress">
-                            <div class="progress-bar" style="width: 90%; background: #ff5722fe;"></div>
+                            <div class="progress-bar reveal-skills-progress" style="width: 90%; background: #ff5722fe;"></div>
                         </div>
                     </div>
                 </a>
 
                 <a href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets" target="_blank">
-                    <div class="box-img">
+                    <div class="box-img reveal-skills-img">
                         <img src="img/css.png" alt="CSS logo">
                     </div>
                     <div class="box-progress">
-                        <span style="color: white;">CSS</span>
+                        <span class="reveal-skills-txt" style="color: white;">CSS</span>
                         <div class="progress">
-                            <div class="progress-bar" style="width: 90%; background: #214ce5fe;"></div>
+                            <div class="progress-bar reveal-skills-progress" style="width: 90%; background: #214ce5fe;"></div>
                         </div>
                     </div>
                 </a>
 
                 <a href="http://en.wikipedia.org/wiki/JavaScript" target="_blank">
-                    <div class="box-img">
+                    <div class="box-img reveal-skills-img">
                         <img src="img/javascript.png" alt="JavaScript logo">
                     </div>
                     <div class="box-progress">
-                        <span style="color: black;">JavaScript</span>
+                        <span class="reveal-skills-txt" style="color: black;">JavaScript</span>
                         <div class="progress">
-                            <div class="progress-bar" style="width: 80%; background: rgba(240, 219, 79, 255);"></div>
+                            <div class="progress-bar reveal-skills-progress" style="width: 80%; background: rgba(240, 219, 79, 255);"></div>
                         </div>
                     </div>
                 </a>
 
                 <a href="https://www.php.net" target="_blank">
-                    <div class="box-img">
+                    <div class="box-img reveal-skills-img">
                         <img src="img/php.png" alt="PHP logo">
                     </div>
                     <div class="box-progress">
-                        <span style="color: black;">PHP</span>
+                        <span class="reveal-skills-txt" style="color: black;">PHP</span>
                         <div class="progress">
-                            <div class="progress-bar" style="width: 70%; background: rgba(139, 156, 208, 255);"></div>
+                            <div class="progress-bar reveal-skills-progress" style="width: 70%; background: rgba(139, 156, 208, 255);"></div>
                         </div>
                     </div>
                 </a>
 
                 <a href="https://www.mysql.com/fr/" target="_blank">
-                    <div class="box-img">
+                    <div class="box-img reveal-skills-img">
                         <img src="img/mysql.png" alt="MYSQL logo">
                     </div>
                     <div class="box-progress">
-                        <span style="color: white;">MySQL</span>
+                        <span class="reveal-skills-txt" style="color: white;">MySQL</span>
                         <div class="progress">
-                            <div class="progress-bar" style="width: 70%; background: rgba(0, 97, 139, 255);"></div>
+                            <div class="progress-bar reveal-skills-progress" style="width: 70%; background: rgba(0, 97, 139, 255);"></div>
                         </div>
                     </div>
                 </a>
 
                 <a href="https://www.python.org" target="_blank">
-                    <div class="box-img">
+                    <div class="box-img reveal-skills-img">
                         <img src="img/python.png" alt="CSS logo">
                     </div>
                     <div class="box-progress">
-                        <span style="color: rgba(50, 112, 161, 255);">Python</span>
+                        <span class="reveal-skills-txt" style="color: rgba(50, 112, 161, 255);">Python</span>
                         <div class="progress">
-                            <div class="progress-bar" style="width: 80%; background: rgba(255, 228, 102, 255);"></div>
+                            <div class="progress-bar reveal-skills-progress" style="width: 80%; background: rgba(255, 228, 102, 255);"></div>
                         </div>
                     </div>
                 </a>
 
                 <a href="https://www.java.com/fr/" target="_blank">
-                    <div class="box-img">
+                    <div class="box-img reveal-skills-img">
                         <img src="img/java.png" alt="Java logo">
                     </div>
                     <div class="box-progress">
-                        <span style="color: white;">Java</span>
+                        <span class="reveal-skills-txt" style="color: white;">Java</span>
                         <div class="progress">
-                            <div class="progress-bar" style="width: 50%; background: rgba(237, 33, 37, 255);"></div>
+                            <div class="progress-bar reveal-skills-progress" style="width: 50%; background: rgba(237, 33, 37, 255);"></div>
                         </div>
                     </div>
                 </a>
@@ -274,31 +274,31 @@
             <div class="list">
                 
                 <div class="link">
-                    <div class="box-img">
+                    <div class="box-img reveal">
                         <img src="img/gmail.png" alt="Gmail Logo">
                     </div>
-                    <span>depussay.tom1@gmail.com</span>
+                    <span class="reveal">depussay.tom1@gmail.com</span>
                 </div>
 
                 <a href="https://www.linkedin.com/in/tom-depussay-a58382238/" target="_blank">
-                    <div class="box-img">
+                    <div class="box-img reveal">
                         <img src="img/linkedln.png" alt="LinkedIn Logo">
                     </div>
-                    <span>LinkedIn</span>
+                    <span class="reveal">LinkedIn</span>
                 </a>
 
                 <a href="https://github.com/tomdepussay" target="_blank">
-                    <div class="box-img">
+                    <div class="box-img reveal">
                         <img src="img/github.png" alt="GitHub Logo">
                     </div>
-                    <span>GitHub</span>
+                    <span class="reveal">GitHub</span>
                 </a>
 
                 <div class="link">
-                    <div class="box-img">
+                    <div class="box-img reveal">
                         <img src="img/discord.png" alt="Discord Logo">
                     </div>
-                    <span>Playxids#3030</span>
+                    <span class="reveal">Playxids#3030</span>
                 </div>
 
             </div>

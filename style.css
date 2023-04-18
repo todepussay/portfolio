@@ -552,6 +552,78 @@ footer .content p, footer .content span {
     font-size: 1.5rem;
 }
 
+.reveal {
+    display: block;
+    opacity: 0;
+}
+
+.reveal.active {
+    animation: reveal 1s forwards;
+}
+
+.reveal-skills-img {
+    display: block;
+    opacity: 0;
+}
+
+.reveal-skills-img.active-skills-img {
+    animation: reveal-skills-img 1s forwards;
+}
+
+.reveal-skills-progress {
+    width: 0%;
+}
+
+.reveal-skills-txt {
+    opacity: 0;
+}
+
+.reveal-skills-txt.active-skills-txt {
+    animation: reveal-skills-img 1s forwards;
+}
+
+@keyframes reveal {
+    from {
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes reveal-skills-img {
+    from {
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }   
+}
+
+@keyframes open-menu {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes close-menu {
+    from {
+        opacity: 1;
+        transform: none;
+    }
+    to {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+}
+
 @media screen and (max-width: 1440px){
     .card {
         margin-top: 0;
@@ -783,7 +855,6 @@ footer .content p, footer .content span {
 
     .list-skills a .box-img, .list-skills a .box-img img {
         width: 100px;
-        height: 100px;
     }
 
     .list-skills a .box-progress {
