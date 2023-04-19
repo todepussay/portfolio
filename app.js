@@ -56,6 +56,19 @@ document.getElementById('close-btn').onclick = function() {
 }
 
 window.addEventListener("scroll", function reveal() {
+
+    var top_btn = document.getElementById("top-btn");
+
+    if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+        top_btn.style.display = "block";
+        top_btn.style.animation = "reveal-top-btn 0.2s ease-in-out forwards";
+    } else {
+        top_btn.style.animation = "dereveal-top-btn 0.2s ease-in-out forwards";
+        setTimeout(function() {
+            top_btn.style.display = "none";
+        }, 200);
+    }
+
     var reveals = document.querySelectorAll(".reveal");
 
     var reveals_skills_img = document.querySelectorAll(".reveal-skills-img");
