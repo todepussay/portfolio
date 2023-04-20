@@ -54,8 +54,22 @@ body {
 
 .main {
     height: 100vh;
-    background: rgb(0,0,126);
-    background: radial-gradient(circle, rgba(0,0,126,1) 0%, rgba(0,0,36,1) 87%);
+    background: rgb(14,0,97);
+    background: linear-gradient(138deg, rgba(14,0,97,1) 36%, rgba(0,70,157,1) 75%);
+    background-size: 300% 300%;
+	animation: gradient 30s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 header {
