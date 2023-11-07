@@ -1,5 +1,3 @@
-// Change age in real time
-
 var today = new Date();
 var now = today.toLocaleDateString();
 
@@ -16,7 +14,9 @@ if (m < 0 || (m === 0 && today.getDate() < dateNaissance.getDate())) {
     age--;
 }
 
-document.getElementById('age').innerHTML = age;
+for(var i = 0; i < document.getElementsByClassName("age").length; i++) {
+    document.getElementsByClassName("age")[i].innerHTML = age;
+}
 
 // Get % of progress bar
 
