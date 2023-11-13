@@ -142,7 +142,7 @@
                         personnes et une page pour pouvoir afficher un tableau des meilleurs scores.
                         <br>
                         <span>
-                            HTML, CSS, JavaScript, PHP, MySQL
+                            HTML, CSS, JavaScript, PHP
                         </span>
                     </p>
                     <a target="_blank" href="https://github.com/tomdepussay/typing-test" class="btn">GitHub du projet</a>
@@ -219,96 +219,156 @@
 
             <h2>Mes compétences</h2>
 
-            <div class="list-skills">
+            <div class="skill-box">
+                <div class="onglets">
+                    <div class="onglet active" id="front">
+                        <p>Front-End</p>
+                    </div>
+                    <div class="onglet" id="back">
+                        <p>Back-End</p>
+                    </div>
+                    <div class="onglet" id="framework">
+                        <p>Framework</p>
+                    </div>
+                    <div class="onglet" id="algo">
+                        <p>Algorithmie</p>
+                    </div>
+                </div>
 
-                <a href="http://en.wikipedia.org/wiki/HTML" target="_blank">
-                    <div class="box-img reveal-skills-img">
-                        <img src="img/html.png" alt="HTML logo">
+                <div class="list-content-skills">
+                    <div class="list-skill-content" id="front-list">
+                        <a href="https://wikipedia.org/wiki/HTML" target="_blank">
+                            <img src="img/html.png" alt="HTML Logo">
+                            <p>HTML</p>
+                        </a>
+                        <a href="https://wikipedia.org/wiki/Cascading_Style_Sheets" target="_blank">
+                            <img src="img/css.png" alt="CSS Logo">
+                            <p>CSS</p>
+                        </a>
+                        <a href="https://wikipedia.org/wiki/JavaScript" target="_blank">
+                            <img src="img/javascript.png" alt="JavaScript Logo">
+                            <p>JavaScript</p>
+                        </a>
                     </div>
-                    <div class="box-progress">
-                        <span class="reveal-skills-txt" style="color: white;">HTML</span>
-                        <div class="progress">
-                            <div class="progress-bar reveal-skills-progress" style="width: 90%; background: #ff5722fe;"></div>
-                        </div>
+                    <div class="list-skill-content" id="back-list" style="display: none;">
+                        <a href="https://www.php.net" target="_blank">
+                            <img src="img/php.jpg" alt="PHP Logo">
+                            <p>PHP</p>
+                        </a>
+                        <a href="https://wikipedia.org/wiki/JavaScript" target="_blank">
+                            <img src="img/javascript.png" alt="JavaScript Logo">
+                            <p>JavaScript</p>
+                        </a>
+                        <a href="https://nodejs.org/en" target="_blank">
+                            <img src="img/nodejs.png" alt="NodeJS Logo">
+                            <p>NodeJS</p>
+                        </a>
+                        <a href="https://expressjs.com" target="_blank">
+                            <img src="img/express.png" alt="Express Logo">
+                            <p>Express</p>
+                        </a>
+                        <a href="https://sql.sh" target="_blank">
+                            <img src="img/sql.png" alt="SQL Logo">
+                            <p>SQL</p>
+                        </a>
                     </div>
-                </a>
+                    <div class="list-skill-content" id="framework-list" style="display: none;">
+                        <a href="https://fr.legacy.reactjs.org" target="_blank">
+                            <img src="img/react.png" alt="React Logo">
+                            <p>React</p>
+                        </a>
+                    </div>
+                    <div class="list-skill-content" id="algo-list" style="display: none;">
+                        <a href="https://www.python.org" target="_blank">
+                            <img src="img/python.png" alt="Python Logo">
+                            <p>Python</p>
+                        </a>
+                        <a href="https://www.java.com/fr/" target="_blank">
+                            <img src="img/java.png" alt="Java Logo">
+                            <p>Java</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
 
-                <a href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets" target="_blank">
-                    <div class="box-img reveal-skills-img">
-                        <img src="img/css.png" alt="CSS logo">
-                    </div>
-                    <div class="box-progress">
-                        <span class="reveal-skills-txt" style="color: white;">CSS</span>
-                        <div class="progress">
-                            <div class="progress-bar reveal-skills-progress" style="width: 90%; background: #214ce5fe;"></div>
-                        </div>
-                    </div>
-                </a>
+            <div class="skill-box-little">
+                <p class="onglet-title">
+                    Front-End
+                </p>
 
-                <a href="http://en.wikipedia.org/wiki/JavaScript" target="_blank">
-                    <div class="box-img reveal-skills-img">
-                        <img src="img/javascript.png" alt="JavaScript logo">
-                    </div>
-                    <div class="box-progress">
-                        <span class="reveal-skills-txt" style="color: black;">JavaScript</span>
-                        <div class="progress">
-                            <div class="progress-bar reveal-skills-progress" style="width: 80%; background: rgba(240, 219, 79, 255);"></div>
-                        </div>
-                    </div>
-                </a>
+                <div class="list-skill-little">
+                    <a href="https://wikipedia.org/wiki/HTML" target="_blank">
+                        <img src="img/html.png" alt="HTML Logo">
+                        <p>HTML</p>
+                    </a>
+                    <a href="https://wikipedia.org/wiki/Cascading_Style_Sheets" target="_blank">
+                        <img src="img/css.png" alt="CSS Logo">
+                        <p>CSS</p>
+                    </a>
+                    <a href="https://wikipedia.org/wiki/JavaScript" target="_blank">
+                        <img src="img/javascript.png" alt="JavaScript Logo">
+                        <p>JavaScript</p>
+                    </a>
+                </div>
+                
+                <p class="onglet-title">
+                    Back-End
+                </p>
 
-                <a href="https://www.php.net" target="_blank">
-                    <div class="box-img reveal-skills-img">
-                        <img src="img/php.png" alt="PHP logo">
-                    </div>
-                    <div class="box-progress">
-                        <span class="reveal-skills-txt" style="color: black;">PHP</span>
-                        <div class="progress">
-                            <div class="progress-bar reveal-skills-progress" style="width: 70%; background: rgba(139, 156, 208, 255);"></div>
-                        </div>
-                    </div>
-                </a>
+                <div class="list-skill-little">
+                    <a href="https://www.php.net" target="_blank">
+                        <img src="img/php.jpg" alt="PHP Logo">
+                        <p>PHP</p>
+                    </a>
+                    <a href="https://wikipedia.org/wiki/JavaScript" target="_blank">
+                        <img src="img/javascript.png" alt="JavaScript Logo">
+                        <p>JavaScript</p>
+                    </a>
+                    <a href="https://nodejs.org/en" target="_blank">
+                        <img src="img/nodejs.png" alt="NodeJS Logo">
+                        <p>NodeJS</p>
+                    </a>
+                    <a href="https://expressjs.com" target="_blank">
+                        <img src="img/express.png" alt="Express Logo">
+                        <p>Express</p>
+                    </a>
+                    <a href="https://sql.sh" target="_blank">
+                        <img src="img/sql.png" alt="SQL Logo">
+                        <p>SQL</p>
+                    </a>
+                </div>
 
-                <a href="https://www.mysql.com/fr/" target="_blank">
-                    <div class="box-img reveal-skills-img">
-                        <img src="img/mysql.png" alt="MYSQL logo">
-                    </div>
-                    <div class="box-progress">
-                        <span class="reveal-skills-txt" style="color: white;">MySQL</span>
-                        <div class="progress">
-                            <div class="progress-bar reveal-skills-progress" style="width: 70%; background: rgba(0, 97, 139, 255);"></div>
-                        </div>
-                    </div>
-                </a>
+                <p class="onglet-title">
+                    Framework
+                </p>
 
-                <a href="https://www.python.org" target="_blank">
-                    <div class="box-img reveal-skills-img">
-                        <img src="img/python.png" alt="CSS logo">
-                    </div>
-                    <div class="box-progress">
-                        <span class="reveal-skills-txt" style="color: rgba(50, 112, 161, 255);">Python</span>
-                        <div class="progress">
-                            <div class="progress-bar reveal-skills-progress" style="width: 80%; background: rgba(255, 228, 102, 255);"></div>
-                        </div>
-                    </div>
-                </a>
+                <div class="list-skill-little">
+                    <a href="https://fr.legacy.reactjs.org" target="_blank">
+                        <img src="img/react.png" alt="React Logo">
+                        <p>React</p>
+                    </a>
+                </div>
 
-                <a href="https://www.java.com/fr/" target="_blank">
-                    <div class="box-img reveal-skills-img">
-                        <img src="img/java.png" alt="Java logo">
-                    </div>
-                    <div class="box-progress">
-                        <span class="reveal-skills-txt" style="color: white;">Java</span>
-                        <div class="progress">
-                            <div class="progress-bar reveal-skills-progress" style="width: 50%; background: rgba(237, 33, 37, 255);"></div>
-                        </div>
-                    </div>
-                </a>
+                <p class="onglet-title">
+                    Algorithmie
+                </p>
+
+                <div class="list-skill-little">
+                    <a href="https://www.python.org" target="_blank">
+                        <img src="img/python.png" alt="Python Logo">
+                        <p>Python</p>
+                    </a>
+                    <a href="https://www.java.com/fr/" target="_blank">
+                        <img src="img/java.png" alt="Java Logo">
+                        <p>Java</p>
+                    </a>
+                </div>
 
             </div>
 
         </div>
     </div>
+
 
     
     <div class="spacing" id="spacing-contact"></div>

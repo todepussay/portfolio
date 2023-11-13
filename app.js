@@ -101,3 +101,19 @@ window.addEventListener("scroll", function reveal() {
 
     
 });
+
+const onglets = document.querySelectorAll('.onglet');
+let ongletActif = document.querySelector('.onglet.active');
+
+for(let i = 0; i < onglets.length; i++){
+    onglets[i].addEventListener('click', function(){
+        if(!this.classList.contains('active')){
+            this.classList.add('active');
+            ongletActif.classList.remove('active');
+
+            document.getElementById(this.id + "-list").style.display = "flex";
+            document.getElementById(ongletActif.id + "-list").style.display = "none";
+            ongletActif = this;
+        }
+    });
+}
