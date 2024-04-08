@@ -387,6 +387,13 @@ header .menu ul li a:hover {
     margin-top: 10px;
 }
 
+.card .card-content .btns {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+}
+
 .card .card-content a {
     display: flex;
     justify-content: center;
@@ -482,6 +489,14 @@ header .menu ul li a:hover {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+}
+
+.list-skill-content .btn-doc {
+    width: 100%;
+    margin: 0px 50px !important;
+    text-align: center;
+    color: var(--blue-deep);
+    border-color: var(--blue-deep);
 }
 
 .list-content-skills a {

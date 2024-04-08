@@ -117,3 +117,29 @@ for(let i = 0; i < onglets.length; i++){
         }
     });
 }
+
+const underscore = document.querySelector('#underscore');
+let position = 0;
+
+setInterval(function(){
+    if(position == 0){
+        underscore.style.opacity = 0;
+        position = 1;
+    } else {
+        underscore.style.opacity = 1;
+        position = 0;
+    }
+}, 1000)
+
+const h2 = document.querySelector('#appear-name');
+let appear_text = "Tom Depussay";
+let j = 0;
+
+setTimeout(function(){
+    setInterval(function(){
+        if(j < appear_text.length){
+            h2.innerHTML += appear_text.charAt(j);
+            j++;
+        }
+    }, 100);
+}, 500);

@@ -52,7 +52,7 @@
             <div class="content reveal active">
                 <p>Bonjour, je m'appelle</p><br>
                 <div id="txt-name">
-                    <h2>Tom Depussay</h2>
+                    <h2><span id="appear-name"></span><span id="underscore">_</span></h2>
                 </div>
                 <p>J'ai <span class="age"></span> ans et je suis un développeur junior au lycée Saint Paul Bourdon Blanc à Orléans</p>
 
@@ -102,8 +102,10 @@
                             Symfony, JavaScript, NodeJS, Socket.io
                         </span>
                     </p>
-                    <a href="https://mamoot.tomdepussay.fr" class="btn">Aller au projet</a>
-                    <a target="_blank" href="https://github.com/tomdepussay/mamoot" class="btn">GitHub du projet</a>
+                    <div class="btns">
+                        <a href="https://mamoot.tomdepussay.fr" class="btn">Aller au projet</a>
+                        <a target="_blank" href="https://github.com/tomdepussay/mamoot" class="btn">GitHub du projet</a>
+                    </div>
                 </div>
             </div>
 
@@ -123,8 +125,10 @@
                             HTML, CSS, JavaScript
                         </span>
                     </p>
-                    <a href="https://demineur.tomdepussay.fr" class="btn">Aller au projet</a>
-                    <a target="_blank" href="https://github.com/tomdepussay/demineur" class="btn">GitHub du projet</a>
+                    <div class="btns">
+                        <a href="https://demineur.tomdepussay.fr" class="btn">Aller au projet</a>
+                        <a target="_blank" href="https://github.com/tomdepussay/demineur" class="btn">GitHub du projet</a>
+                    </div>
                 </div>
             </div>
 
@@ -145,8 +149,10 @@
                             HTML, CSS, JavaScript
                         </span>
                     </p>
-                    <a href="https://maze.tomdepussay.fr" class="btn">Aller au projet</a>
-                    <a target="_blank" href="https://github.com/tomdepussay/maze" class="btn">GitHub du projet</a>
+                    <div class="btns">
+                        <a href="https://maze.tomdepussay.fr" class="btn">Aller au projet</a>
+                        <a target="_blank" href="https://github.com/tomdepussay/maze" class="btn">GitHub du projet</a>
+                    </div>
                 </div>
             </div>
 
@@ -167,8 +173,10 @@
                             HTML, CSS, JavaScript, PHP
                         </span>
                     </p>
-                    <a href="https://typing.tomdepussay.fr" class="btn">Aller au projet</a>
-                    <a target="_blank" href="https://github.com/tomdepussay/typing-test" class="btn">GitHub du projet</a>
+                    <div class="btns">
+                        <a href="https://typing.tomdepussay.fr" class="btn">Aller au projet</a>
+                        <a target="_blank" href="https://github.com/tomdepussay/typing-test" class="btn">GitHub du projet</a>
+                    </div>
                 </div>
             </div>
 
@@ -187,8 +195,10 @@
                             HTML, CSS, JavaScript
                         </span>
                     </p>
-                    <a href="https://convertisseur.tomdepussay.fr" class="btn">Aller au projet</a>
-                    <a target="_blank" href="https://github.com/tomdepussay/convertisseur" class="btn">GitHub du projet</a>
+                    <div class="btns">
+                        <a href="https://convertisseur.tomdepussay.fr" class="btn">Aller au projet</a>
+                        <a target="_blank" href="https://github.com/tomdepussay/convertisseur" class="btn">GitHub du projet</a>
+                    </div>
                 </div>
             </div>
 
@@ -207,7 +217,9 @@
                             Java
                         </span>
                     </p>
-                    <a target="_blank" href="https://github.com/tomdepussay/demineur_console" class="btn">GitHub du projet</a>
+                    <div class="btns">
+                        <a target="_blank" href="https://github.com/tomdepussay/demineur_console" class="btn">GitHub du projet</a>
+                    </div>
                 </div>
             </div>
 
@@ -226,10 +238,11 @@
                             HTML, CSS, JavaScript
                         </span>
                     </p>
-                    <a target="_blank" href="https://github.com/tomdepussay/portfolio" class="btn">GitHub du projet</a>
+                    <div class="btns">
+                        <a target="_blank" href="https://github.com/tomdepussay/portfolio" class="btn">GitHub du projet</a>
+                    </div>
                 </div>
             </div>
-
 
         </div>
     </div>
@@ -254,6 +267,9 @@
                     </div>
                     <div class="onglet" id="algo">
                         <p>Algorithmie</p>
+                    </div>
+                    <div class="onglet" id="doc">
+                        <p>Documentation</p>
                     </div>
                 </div>
 
@@ -308,6 +324,39 @@
                         <a href="https://www.java.com/fr/" target="_blank">
                             <img src="img/java.png" alt="Java Logo">
                             <p>Java</p>
+                        </a>
+                    </div>
+                    <div class="list-skill-content" id="doc-list" style="display: none;">
+                        <a href="https://130.180.210.106:40443/" target="_blank" class="btn btn-doc">
+                            Accéder aux documentations
+                        </a>
+                        <a href="https://130.180.210.106:40443/" target="_blank">
+                            <img src="img/glpi.png" alt="GLPI Logo">
+                            <p>GLPI</p>
+                        </a>
+                        <a href="https://130.180.210.106:40443/" target="_blank">
+                            <img src="img/adminer.png" alt="Adminer Logo">
+                            <p>Adminer</p>
+                        </a>
+                        <a href="https://130.180.210.106:40443/" target="_blank">
+                            <img src="img/mantis.png" alt="Mantis Logo">
+                            <p>Mantis</p>
+                        </a>
+                        <a href="https://130.180.210.106:40443/" target="_blank">
+                            <img src="img/sqlite.png" alt="sqlite Logo">
+                            <p>SQLiteStudio</p>
+                        </a>
+                        <a href="https://130.180.210.106:40443/" target="_blank">
+                            <img src="img/dbeaver.png" alt="dbeaver Logo">
+                            <p>DBeaver</p>
+                        </a>
+                        <a href="https://130.180.210.106:40443/" target="_blank">
+                            <img src="img/heidi.png" alt="heidi Logo">
+                            <p>HeidiSQL</p>
+                        </a>
+                        <a href="https://130.180.210.106:40443/" target="_blank">
+                            <img src="img/ocs.png" alt="OCS Logo">
+                            <p>OSC</p>
                         </a>
                     </div>
                 </div>
@@ -383,6 +432,41 @@
                     <a href="https://www.java.com/fr/" target="_blank">
                         <img src="img/java.png" alt="Java Logo">
                         <p>Java</p>
+                    </a>
+                </div>
+
+                <p class="onglet-title">
+                    Documentation
+                </p>
+
+                <div class="list-skill-little">
+                    <a href="https://130.180.210.106:40443/" target="_blank">
+                        <img src="img/glpi.png" alt="GLPI Logo">
+                        <p>GLPI</p>
+                    </a>
+                    <a href="https://130.180.210.106:40443/" target="_blank">
+                        <img src="img/adminer.png" alt="Adminer Logo">
+                        <p>Adminer</p>
+                    </a>
+                    <a href="https://130.180.210.106:40443/" target="_blank">
+                        <img src="img/mantis.png" alt="Mantis Logo">
+                        <p>Mantis</p>
+                    </a>
+                    <a href="https://130.180.210.106:40443/" target="_blank">
+                        <img src="img/sqlite.png" alt="sqlite Logo">
+                        <p>SQLiteStudio</p>
+                    </a>
+                    <a href="https://130.180.210.106:40443/" target="_blank">
+                        <img src="img/dbeaver.png" alt="dbeaver Logo">
+                        <p>DBeaver</p>
+                    </a>
+                    <a href="https://130.180.210.106:40443/" target="_blank">
+                        <img src="img/heidi.png" alt="heidi Logo">
+                        <p>HeidiSQL</p>
+                    </a>
+                    <a href="https://130.180.210.106:40443/" target="_blank">
+                        <img src="img/ocs.png" alt="OCS Logo">
+                        <p>OSC</p>
                     </a>
                 </div>
 
