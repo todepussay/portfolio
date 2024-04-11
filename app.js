@@ -1,3 +1,9 @@
+var videos = [
+    "OjqkYVSnW9c?si=gHVCtlDMKsardFHa",
+    "icPhPplst20?si=rnnvuM9fKkm3n0Cb",
+    "JfB6IkP6GAg?si=VHSqM5iIl4c0svoG",
+]
+
 var today = new Date();
 var now = today.toLocaleDateString();
 
@@ -116,6 +122,20 @@ for(let i = 0; i < onglets.length; i++){
             ongletActif = this;
         }
     });
+}
+
+for(let i = 0; i < 3; i++){
+    let url = videos[i];
+    var iframe = $('<iframe></iframe>');
+    iframe.attr('src', "https://www.youtube.com/embed/" + url);
+    iframe.attr('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share');
+    iframe.attr('referrerpolicy', 'strict-origin-when-cross-origin');
+    iframe.attr('allowfullscreen', '');
+    iframe.attr("width", "420");
+    iframe.attr("height", "200");
+    iframe.attr("frameborder", "0")
+
+    $('#videos').append(iframe);
 }
 
 const underscore = document.querySelector('#underscore');

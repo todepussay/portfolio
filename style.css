@@ -623,6 +623,121 @@ header .menu ul li a:hover {
     margin-top: 1em;
 }
 
+#veille {
+    padding-top: 2em;
+    background: var(--white);
+    height: auto;
+    padding-bottom: 3em;
+}
+
+#veille .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#veille .content h2 {
+    color: black;
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 3px;
+}
+
+#veille .content p {
+    margin-top: 2em;
+    color: black;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#veille .content p .white-blue {
+    color: var(--blue-deep);
+    text-decoration: none;
+}
+
+#veille .content h3 {
+    margin: 1.5em 0;
+    font-size: 30px;
+    color: var(--blue-deep);
+}
+
+#veille .content #videos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#veille .content #videos iframe {
+    width: 425px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 15px 8px rgba(0,0,0,0.2);
+}
+
+.articles {
+    display: flex;
+    gap: 30px 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.article {
+    width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 10px 15px 8px rgba(0,0,0,0.2);
+}
+
+.article:hover {
+    box-shadow: 0px 10px 15px 8px rgba(0,0,0,0.4);
+    scale: 1.05;
+}
+
+.article .article-header {
+    height: 30%;
+}
+
+.article .article-header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0px 15px 33px -3px rgba(0,0,0,0.1);
+}
+
+.article .article-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    height: 70%;
+}
+
+.article .article-content h4 {
+    color: var(--blue-deep);
+    font-size: 20px;
+}
+
+.article .article-content p {
+    color: black !important;
+    font-size: 17px !important;
+    margin-top: 1em !important;
+    text-align: start !important;
+}
+
+.article .article-content a {
+    border-color: var(--blue-deep);
+    color: var(--blue-deep);
+    text-align: center;
+    width: 70%;
+    margin-top: 20px;
+}
+
 #contact {
     background: var(--blue-deep2);
     height: auto;
