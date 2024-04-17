@@ -1,3 +1,5 @@
+// Déclaration des variables
+
 var videos = [
     "OjqkYVSnW9c?si=gHVCtlDMKsardFHa",
     "icPhPplst20?si=rnnvuM9fKkm3n0Cb",
@@ -5,18 +7,20 @@ var videos = [
 ]
 
 var height_top = 0;
+
 var today = new Date();
 var now = today.toLocaleDateString();
+
+// Changement de l'âge
 
 var anniv = "14/07/2003";
 var an = anniv.substr(6,4);
 var mois = anniv.substr(3,2);
 var day = anniv.substr(0,2);
-
 var dateNaissance = new Date(an + "-" + mois + "-" + day);
-
 var age = today.getFullYear() - dateNaissance.getFullYear();
 var m = today.getMonth() - dateNaissance.getMonth();
+
 if (m < 0 || (m === 0 && today.getDate() < dateNaissance.getDate())) {
     age--;
 }
@@ -25,18 +29,9 @@ for(var i = 0; i < document.getElementsByClassName("age").length; i++) {
     document.getElementsByClassName("age")[i].innerHTML = age;
 }
 
-// Get % of progress bar
+// Changement de l'année dans le footer
 
-var progress_bar = document.querySelectorAll(".progress-bar");
-
-var array_progress = [];
-
-for (var i = 0; i < progress_bar.length; i++) {
-    var progression = progress_bar[i].style.width;
-    progress_bar[i].style.width = progression;
-    array_progress.push(progression);
-    progress_bar[i].style.width = "0%";
-}
+document.getElementById("actual_year").innerHTML = today.getFullYear();
 
 // Scroll to anchor
 
@@ -50,6 +45,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+// Ouvrir et fermer le menu
+
 document.getElementById('menu-btn').onclick = function() {
     document.getElementById('menu-div').style.display = 'block';
     document.getElementById('menu-div').style.animation = "open-menu 0.5s forwards";
@@ -62,13 +59,19 @@ document.getElementById('close-btn').onclick = function() {
     }, 500);
 }
 
+// Actualilsation de la taille de la div top lors du redimensionnement de la fenêtre
+
 window.addEventListener("resize", function() {
     height_top = document.getElementById("top").offsetHeight;
 });
 
+// Evenement scroll
+
 window.addEventListener("scroll", function reveal() {
 
     var top_btn = document.getElementById("top-btn");
+
+    // Affichage du bouton pour remonter en haut de la page
 
     if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
         top_btn.style.display = "block";
@@ -79,12 +82,16 @@ window.addEventListener("scroll", function reveal() {
             top_btn.style.display = "none";
         }, 200);
     }
+
+    // Déplacement de l'élément home en fonction du scroll
     
     height_top = document.getElementById("top").offsetHeight;
 
     let pourcentage = ((window.scrollY / height_top) * 100) / 2;
 
     this.document.getElementById("home").style.transform = "translateX(" + -pourcentage + "%)";
+
+    // Affichage des éléments au scroll
 
     var reveals = document.querySelectorAll(".reveal");
 
@@ -119,6 +126,8 @@ window.addEventListener("scroll", function reveal() {
     
 });
 
+// Affichage des compétences en fonction de l'onglet actif 
+
 const onglets = document.querySelectorAll('.onglet');
 let ongletActif = document.querySelector('.onglet.active');
 
@@ -135,6 +144,8 @@ for(let i = 0; i < onglets.length; i++){
     });
 }
 
+// Affichage des vidéos pour la veille technologique
+
 for(let i = 0; i < 3; i++){
     let url = videos[i];
     var iframe = $('<iframe></iframe>');
@@ -149,8 +160,12 @@ for(let i = 0; i < 3; i++){
     $('#videos').append(iframe);
 }
 
+// Animation du texte lors du chargement de la page
+
 const underscore = document.querySelector('#underscore');
 let position = 0;
+
+// Animation de l'underscore
 
 setInterval(function(){
     if(position == 0){
@@ -165,6 +180,8 @@ setInterval(function(){
 const h2 = document.querySelector('#appear-name');
 let appear_text = "Tom Depussay";
 let j = 0;
+
+// Animation du texte
 
 setTimeout(function(){
     setInterval(function(){

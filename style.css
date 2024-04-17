@@ -794,10 +794,6 @@ footer .content p, footer .content span {
     animation: reveal-skills-img 1s forwards;
 }
 
-.reveal-skills-progress {
-    width: 0%;
-}
-
 .reveal-skills-txt {
     opacity: 0;
 }
@@ -1094,14 +1090,6 @@ footer .content p, footer .content span {
         width: 100px;
     }
 
-    .list-skills a .box-progress {
-        height: 40px;
-    }
-
-    .list-skills a .box-progress span {
-        font-size: 1rem;
-    }
-
     #skills .content h2 {
         font-size: 2rem;
     }
@@ -1135,10 +1123,5 @@ footer .content p, footer .content span {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
-
-    .list-skills a .box-progress {
-        width: 90%;
-        margin-left: 0;
     }
 }
