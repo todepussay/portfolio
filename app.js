@@ -4,6 +4,7 @@ var videos = [
     "JfB6IkP6GAg?si=VHSqM5iIl4c0svoG",
 ]
 
+var height_top = 0;
 var today = new Date();
 var now = today.toLocaleDateString();
 
@@ -61,6 +62,10 @@ document.getElementById('close-btn').onclick = function() {
     }, 500);
 }
 
+window.addEventListener("resize", function() {
+    height_top = document.getElementById("top").offsetHeight;
+});
+
 window.addEventListener("scroll", function reveal() {
 
     var top_btn = document.getElementById("top-btn");
@@ -74,6 +79,12 @@ window.addEventListener("scroll", function reveal() {
             top_btn.style.display = "none";
         }, 200);
     }
+    
+    height_top = document.getElementById("top").offsetHeight;
+
+    let pourcentage = ((window.scrollY / height_top) * 100) / 2;
+
+    this.document.getElementById("home").style.transform = "translateX(" + -pourcentage + "%)";
 
     var reveals = document.querySelectorAll(".reveal");
 
@@ -133,7 +144,7 @@ for(let i = 0; i < 3; i++){
     iframe.attr('allowfullscreen', '');
     iframe.attr("width", "420");
     iframe.attr("height", "200");
-    iframe.attr("frameborder", "0")
+    iframe.attr("frameborder", "0");
 
     $('#videos').append(iframe);
 }

@@ -20,15 +20,16 @@
             <div class="name">
                 <h1>Tom Depussay</h1>
             </div>
-            <div class="menu">
+            <nav class="menu">
                 <ul>
                     <li><a href="#top">Accueil</a></li>
                     <li><a href="#about">A propos de moi</a></li>
                     <li><a href="#projects">Mes projets</a></li>
                     <li><a href="#skills">Mes compétences</a></li>
+                    <li><a href="#veille">Ma veille</a></li>
                     <li><a href="#contact" class="btn">Me contacter</a></li>
                 </ul>
-            </div>
+            </nav>
             <div id="menu-btn">
                 <ion-icon name="menu-outline"></ion-icon>
             </div>
@@ -43,6 +44,7 @@
                     <li><a href="#about">A propos de moi</a></li>
                     <li><a href="#projects">Mes projets</a></li>
                     <li><a href="#skills">Mes compétences</a></li>
+                    <li><a href="#veille">Ma veille</a></li>
                     <li><a href="#contact" class="btn">Me contacter</a></li>
                 </ul>
             </div>
@@ -106,6 +108,27 @@
                     <div class="btns">
                         <a href="https://mamoot.tomdepussay.fr" class="btn">Aller au projet</a>
                         <a target="_blank" href="https://github.com/tomdepussay/mamoot" class="btn">GitHub du projet</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-video  reveal">
+                    <a href="#">
+                        <video loop muted autoplay src="video/gvh.mp4"></video>
+                    </a>
+                </div>
+                <div class="card-content reveal">
+                    <h3>GVH</h3>
+                    <p>
+                        Gestion des véhicules (GVH) est une application développée pour le CNFPT d'Orléans. <br>
+                        Permettant de réserver et de gérer les véhicules de l'organisme. <br>
+                        <span>
+                            PHP, JavaScript, SQL
+                        </span>
+                    </p>
+                    <div class="btns">
+                        <a target="_blank" href="https://130.180.210.106:40443/" class="btn">Documentation projet</a>
                     </div>
                 </div>
             </div>
@@ -359,6 +382,10 @@
                             <img src="img/ocs.png" alt="OCS Logo">
                             <p>OSC</p>
                         </a>
+                        <a href="https://130.180.210.106:40443/" target="_blank">
+                            <img src="img/E4.png" alt="E4 Logo">
+                            <p>Epreuve E4</p>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -499,27 +526,11 @@
                     </div>
 
                     <div class="article-content">
-                        <h4>React v18.0</h4>
+                        <h4>React v18.0 <span>29/03/2024</span></h4>
 
                         <p>Un récapitulatif des changements apportés par la nouvelle version de React, la version 18.0. Avec des ajouts comme Concurrent React ou encore le rendu côté server avec Suspense.</p>
 
                         <a href="https://react.dev/blog/2022/03/29/react-v18" target="_blank" class="btn">
-                            Lire l'article
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="article">
-                    <div class="article-header">
-                        <img src="img/angular_signal_inputs.png" alt="Banner Article">
-                    </div>
-
-                    <div class="article-content">
-                        <h4>Signal Input</h4>
-
-                        <p>Le framework JavaScript, Angular, nous présente dans sa nouvelle mise à jour une nouvelle fonctionnalité. Signal Input permet de faire des éléments qui se mettent à jour pendant leur cycle de vie permettant un rendu plus réactif et plus sécurisé.</p>
-
-                        <a href="https://blog.angular.io/signal-inputs-available-in-developer-preview-6a7ff1941823" target="_blank" class="btn">
                             Lire l'article
                         </a>
                     </div>
@@ -531,11 +542,27 @@
                     </div>
 
                     <div class="article-content">
-                        <h4>TypeScript 5.4</h4>
+                        <h4>TypeScript 5.4 <span>07/03/2024</span></h4>
 
-                        <p>Microsoft annonce une nouvelle mise à jour de son langage de programmation TypeScript, un langage s'appuyant sur JavaScript. Dans les nouveautés, il y a un nouveau type de variable NoInfer, mais aussi des corrections de bogues.</p>
+                        <p>Microsoft annonce une nouvelle mise à jour de son langage de programmation TypeScript, un langage s'appuyant sur JavaScript. Dans les nouveautés, il y a un nouveau type de variable NoInfer.</p>
 
                         <a href="https://typescript.developpez.com/actu/355006/Microsoft-annonce-la-disponibilite-de-TypeScript-5-4-cette-version-apporte-un-nouveau-support-d-auto-importation-pour-les-importations-de-sous-chemins/" target="_blank" class="btn">
+                            Lire l'article
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="article">
+                    <div class="article-header">
+                        <img src="img/angular_signal_inputs.png" alt="Banner Article">
+                    </div>
+
+                    <div class="article-content">
+                        <h4>Signal Input <span>22/02/2024</span></h4>
+
+                        <p>Le framework JavaScript, Angular, nous présente dans sa nouvelle mise à jour une nouvelle fonctionnalité. Signal Input permet de faire un rendu plus réactif et plus sécurisé.</p>
+
+                        <a href="https://blog.angular.io/signal-inputs-available-in-developer-preview-6a7ff1941823" target="_blank" class="btn">
                             Lire l'article
                         </a>
                     </div>
@@ -563,14 +590,14 @@
                     <span class="reveal">depussay.tom1@gmail.com</span>
                 </div>
 
-                <a href="https://www.linkedin.com/in/tom-depussay-a58382238/" target="_blank">
+                <a class="link" href="https://www.linkedin.com/in/tom-depussay-a58382238/" target="_blank">
                     <div class="box-img reveal">
                         <img src="img/linkedln.png" alt="LinkedIn Logo">
                     </div>
                     <span class="reveal">LinkedIn</span>
                 </a>
 
-                <a href="https://github.com/tomdepussay" target="_blank">
+                <a class="link" href="https://github.com/tomdepussay" target="_blank">
                     <div class="box-img reveal">
                         <img src="img/github.png" alt="GitHub Logo">
                     </div>
